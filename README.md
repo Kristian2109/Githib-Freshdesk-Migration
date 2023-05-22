@@ -8,6 +8,6 @@
 2. The program takes the user login and retrieves the user information throught the Github Api
 3. Then, it will create user or update an existing user with the Freshdesk Api
    - Fields it transfers from Github to Freshdesk: name, location, email, login
-5. At the end, it will input the information in MySQL database
+5. At the end, it will insert or update the user login, created_at and email in MySQL database
 
 <img src="FreshdeskImage2.png"/>
