@@ -15,7 +15,6 @@ async function getGitHubUser(username) {
 
     try {
         let response = await axios.get(url, { headers });
-        console.log(response.data);
         return response.data;
     } catch (error) {
         console.log(error.message);
@@ -39,7 +38,6 @@ async function createOrUpdateContactFreshdesk(contact, freshdeskDomain) {
     try {
         const res = await axios.get(FRESHDESK_URL, { headers });
         const id = findContactId(res.data, contact.unique_external_id);
-        console.log(id);
 
         if (id === null) {
             try {
